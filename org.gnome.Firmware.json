@@ -40,6 +40,27 @@
       ]
     },
     {
+      "name": "libjcat",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "cleanup": [
+        "/bin/jcat-tool"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.3.tar.xz",
+          "sha256": "8b8585cc34f1b2e87d21c6eab8a1081cf6aa45294339bb5fca8a8437a17d2b73"
+        }
+      ]
+    },
+    {
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
@@ -50,8 +71,12 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.3.9.tar.xz",
-              "sha256": "66e446f9437c79b5efe59f1f398593d1e0ad1f29065e807c62cbb7c007aac740"
+              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.4.4.tar.xz",
+              "sha256": "d742d5f30b6018a936486c3e42f6f2542ed8724afe04f517eb7b14dda749d60f"
+          },
+          {
+              "type": "patch",
+              "path": "0001-trivial-Require-libjcat-even-when-compiled-with-Dbui.patch"
           }
       ]
     },
@@ -64,12 +89,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-3.34.0.tar.xz",
-          "sha256": "bd33a3db43b6e5ab873cbbe304ac60e6fb4f56c9a6b1135a90561c51dfaed668"
-        },
-        {
-            "type": "patch",
-            "path": "0001-Update-the-AppData-file-to-pass-validation.patch"
+          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-3.36.0.tar.xz",
+          "sha256": "085da82f7c4a027abcd8cbc2c66da92158eff723d4cdffc1cf032ebd590215f4"
         }
       ]
     }

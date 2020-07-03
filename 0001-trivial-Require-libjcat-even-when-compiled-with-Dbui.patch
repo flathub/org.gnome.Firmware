@@ -1,0 +1,30 @@
+From 57e9429ee941dbed2410945cfae97c265b91e6c0 Mon Sep 17 00:00:00 2001
+From: Richard Hughes <richard@hughsie.com>
+Date: Fri, 3 Jul 2020 15:47:25 +0100
+Subject: [PATCH] trivial: Require libjcat even when compiled with
+ -Dbuild=library
+
+---
+ meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git meson.build meson.build
+index c112c862..520bc500 100644
+--- a/meson.build
++++ b/meson.build
+@@ -194,11 +194,11 @@ else
+   gudev = dependency('', required : false)
+ endif
+ libxmlb = dependency('xmlb', version : '>= 0.1.13', fallback : ['libxmlb', 'libxmlb_dep'])
+-libjcat = dependency('jcat', version : '>= 0.1.0', fallback : ['libjcat', 'libjcat_dep'])
+ gusb = dependency('gusb', version : '>= 0.2.9', fallback : ['gusb', 'gusb_dep'])
+ sqlite = dependency('sqlite3')
+ libarchive = dependency('libarchive')
+ endif
++libjcat = dependency('jcat', version : '>= 0.1.0', fallback : ['libjcat', 'libjcat_dep'])
+ libjsonglib = dependency('json-glib-1.0', version : '>= 1.1.1')
+ valgrind = dependency('valgrind', required: false)
+ soup = dependency('libsoup-2.4', version : '>= 2.51.92')
+-- 
+2.26.2
+
