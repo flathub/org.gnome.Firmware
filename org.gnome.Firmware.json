@@ -77,6 +77,72 @@
       ]
     },
     {
+      "name": "systemd",
+      "buildsystem": "meson",
+      "config-opts": [
+        "--libdir=lib",
+        "-Drootprefix=/app",
+        "-Drootlibdir=/app/lib",
+        "-Dsysconfdir=/app/etc",
+        "-Dutmp=false",
+        "-Dhibernate=false",
+        "-Dldconfig=false",
+        "-Dresolve=false",
+        "-Defi=false",
+        "-Dtpm=false",
+        "-Denvironment-d=false",
+        "-Dbinfmt=false",
+        "-Dcoredump=false",
+        "-Dlogind=false",
+        "-Dhostnamed=false",
+        "-Dlocaled=false",
+        "-Dmachined=false",
+        "-Dportabled=false",
+        "-Dnetworkd=false",
+        "-Dtimedated=false",
+        "-Dtimesyncd=false",
+        "-Dremote=false",
+        "-Dnss-myhostname=false",
+        "-Dnss-mymachines=false",
+        "-Dnss-resolve=false",
+        "-Dnss-systemd=false",
+        "-Dfirstboot=false",
+        "-Drandomseed=false",
+        "-Dbacklight=false",
+        "-Dvconsole=false",
+        "-Dquotacheck=false",
+        "-Dsysusers=false",
+        "-Dtmpfiles=false",
+        "-Dimportd=false",
+        "-Dhwdb=false",
+        "-Drfkill=false",
+        "-Dman=false",
+        "-Dhtml=false",
+        "-Dbashcompletiondir=no",
+        "-Dzshcompletiondir=no"
+      ],
+      "cleanup": [
+        "/bin",
+        "/etc",
+        "/lib/libudev*",
+        "/lib/kernel",
+        "/lib/modprobe.d",
+        "/lib/rpm",
+        "/lib/sysctl.d",
+        "/lib/systemd",
+        "/lib/udev",
+        "/share"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/systemd/systemd.git",
+          "tag": "v246",
+          "commit": "ae366f3acbc1a45504e9875099b17a7e1a221d03"
+        }
+      ]
+    },
+    {
       "name": "gnome-firmware",
       "buildsystem": "meson",
       "config-opts": [
