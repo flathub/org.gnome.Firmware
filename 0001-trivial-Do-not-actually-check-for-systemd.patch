@@ -1,0 +1,32 @@
+From 61ef942486895d77a4f88432adc80f7ec39c5b72 Mon Sep 17 00:00:00 2001
+From: Richard Hughes <richard@hughsie.com>
+Date: Tue, 21 Dec 2021 11:59:48 +0000
+Subject: [PATCH] trivial: Do not actually check for systemd
+
+We only use the D-Bus interface and do not use the library at all.
+This makes building the flatpak *much* simpler.
+---
+ meson.build | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/meson.build b/meson.build
+index be00eb0..066f5e1 100644
+--- a/meson.build
++++ b/meson.build
+@@ -91,13 +91,11 @@ conf.set_quoted('VERSION', meson.project_version())
+ conf.set_quoted('LOCALEDIR', prefixed_localedir)
+ 
+ if get_option('systemd')
+-  systemd = dependency('systemd', version : '>= 211')
+   conf.set('HAVE_SYSTEMD' , '1')
+   conf.set('HAVE_LOGIND' , '1')
+ endif
+ 
+ if get_option('elogind')
+-  elogind = dependency('libelogind', version : '>= 211')
+   conf.set('HAVE_LOGIND' , '1')
+ endif
+ 
+-- 
+2.33.1
+
