@@ -2,7 +2,7 @@
   "app-id": "org.gnome.Firmware",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "41",
+  "runtime-version": "42",
   "command": "gnome-firmware",
   "finish-args": [
     "--share=ipc",
@@ -32,8 +32,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.6.tar.xz",
-          "sha256": "84e0b942c1b9bf69001977f1c365cebeb52e33f44749eb6b727fa3735b0fca54"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.8.tar.xz",
+          "sha256": "87d3729069bc74cc269549173a8fd798dae70bb05016a1353f66146725df0801"
         }
       ]
     },
@@ -51,8 +51,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.9.tar.xz",
-          "sha256": "40af7412082df443e36e98f4e04b5863d68668f2853e6d7117bcbe17fe7ab17f"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.11.tar.xz",
+          "sha256": "305687815e97a384e2861a3038acadf11eb967402406799d17214be5dd4e1765"
         }
       ]
     },
@@ -71,15 +71,11 @@
         "-Dtests=false"
       ],
       "sources": [
-          {
-              "type": "archive",
-              "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.3.tar.xz",
-              "sha256": "109dacc16ed0db71eb08b852e96b070b8c2c53516a3071b9d0683acd8ecd42d9"
-          },
-          {
-              "type": "patch",
-              "path": "0001-trivial-Fix-compiling-with-Dbuild-library.patch"
-          }
+        {
+          "type": "archive",
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.6.tar.xz",
+          "sha256": "7ebe1514acb688d2649cecc392db929094da3f03cfc98a9c0faccabb084912fa"
+        }
       ]
     },
     {
@@ -91,12 +87,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-41.0.tar.xz",
-          "sha256": "f6d6fd4c5712bb9ecdbc6cc8dff6c65a3c8857545ab4a24b5aeabf80514b86bb"
-          },
-          {
-              "type": "patch",
-              "path": "0001-trivial-Do-not-actually-check-for-systemd.patch"
+          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-42.0.tar.xz",
+          "sha256": "bbf00b042f0e017fa4235af4c7a4be93a0fe191f213a3478b45d82d875c74412"
+        },
+        {
+          "type": "patch",
+          "path": "0001-trivial-Fix-up-numbering-in-AppData-file.patch"
         }
       ]
     }
