@@ -5,6 +5,7 @@
   "runtime-version": "42",
   "command": "gnome-firmware",
   "finish-args": [
+    "--device=dri",
     "--share=ipc",
     "--socket=wayland",
     "--socket=fallback-x11",
