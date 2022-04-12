@@ -74,8 +74,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.6.tar.xz",
-          "sha256": "7ebe1514acb688d2649cecc392db929094da3f03cfc98a9c0faccabb084912fa"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.7.tar.xz",
+          "sha256": "414994d3acdf674a90f70a2da16da4e176a5ad11fe636e6ab3f0e1a49e062969"
         }
       ]
     },
@@ -88,12 +88,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-42.0.tar.xz",
-          "sha256": "bbf00b042f0e017fa4235af4c7a4be93a0fe191f213a3478b45d82d875c74412"
-        },
-        {
-          "type": "patch",
-          "path": "0001-trivial-Fix-up-numbering-in-AppData-file.patch"
+          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-42.1.tar.xz",
+          "sha256": "68f51879aab32b642c6bdd5d48a9c20e5cf820045372b16cfa911cdd8488ce7f"
         }
       ]
     }
