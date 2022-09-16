@@ -34,8 +34,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.8.tar.xz",
-          "sha256": "87d3729069bc74cc269549173a8fd798dae70bb05016a1353f66146725df0801"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.10.tar.xz",
+          "sha256": "5e842233568b58e87071c396621479def17d48334b355d1ffb48373ad3717f6f"
         }
       ]
     },
@@ -53,8 +53,23 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.11.tar.xz",
-          "sha256": "305687815e97a384e2861a3038acadf11eb967402406799d17214be5dd4e1765"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.12.tar.xz",
+          "sha256": "318d7e370b3cff4b03f2a4be541e6a309eb40de22c48ccbc0661659dfa7b0c92"
+        }
+      ]
+    },
+    {
+      "name": "meson",
+      "buildsystem": "simple",
+      "build-commands": [
+        "python3 setup.py build",
+        "python3 setup.py install --prefix=/app --root=/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://files.pythonhosted.org/packages/e1/5a/951f217a0cdd76501c33827ef2a5852fd1e1b3b294360f9efeac1b4b57a4/meson-0.62.1.tar.gz",
+          "sha256": "a0f5caa1e70da12d5e63aa6a9504273759b891af36c8d87de381a4ed1380e845"
         }
       ]
     },
@@ -62,21 +77,22 @@
       "name": "fwupd",
       "buildsystem": "meson",
       "config-opts": [
+        "--libdir=/app/lib",
         "-Dbuild=library",
-        "-Dintrospection=false",
-        "-Dgusb=false",
-        "-Dlibarchive=false",
+        "-Dsystemd=disabled",
         "-Dsoup_session_compat=false",
-        "-Dplugin_logitech_bulkcontroller=false",
-        "-Dplugin_msr=false",
-        "-Ddocs=none",
         "-Dtests=false"
       ],
+      "build-options": {
+        "env": {
+          "PYTHONPATH": "/app/utils/lib/python3.9/site-packages:/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
+        }
+      },
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.7.tar.xz",
-          "sha256": "414994d3acdf674a90f70a2da16da4e176a5ad11fe636e6ab3f0e1a49e062969"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.4.tar.xz",
+          "sha256": "adfa07434cdc29ec41c40fef460e8d970963fe0c7e849dec7f3932adb161f886"
         }
       ]
     },
@@ -86,11 +102,16 @@
       "config-opts": [
         "-Dman=false"
       ],
+      "build-options": {
+        "env": {
+          "TEST": "ONLY_HERE_TO_TRIGGER_A_REBUILD"
+        }
+      },
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-42.2.tar.xz",
-          "sha256": "ea78465e68b587639c336ee1c8b7ec27348ee562862717a3f91b4e86f1c0facf"
+          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-43.0.tar.xz",
+          "sha256": "1623f29289724f2965caf949e740e0924d36dd7bbdf2d8fa32fedb487e575575"
         }
       ]
     }
