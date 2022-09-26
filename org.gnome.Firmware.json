@@ -2,7 +2,7 @@
   "app-id": "org.gnome.Firmware",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "42",
+  "runtime-version": "43",
   "command": "gnome-firmware",
   "finish-args": [
     "--device=dri",
@@ -55,21 +55,6 @@
           "type": "archive",
           "url": "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.12.tar.xz",
           "sha256": "318d7e370b3cff4b03f2a4be541e6a309eb40de22c48ccbc0661659dfa7b0c92"
-        }
-      ]
-    },
-    {
-      "name": "meson",
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 setup.py build",
-        "python3 setup.py install --prefix=/app --root=/"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/e1/5a/951f217a0cdd76501c33827ef2a5852fd1e1b3b294360f9efeac1b4b57a4/meson-0.62.1.tar.gz",
-          "sha256": "a0f5caa1e70da12d5e63aa6a9504273759b891af36c8d87de381a4ed1380e845"
         }
       ]
     },
