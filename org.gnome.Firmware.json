@@ -87,16 +87,11 @@
       "config-opts": [
         "-Dman=false"
       ],
-      "build-options": {
-        "env": {
-          "TEST": "ONLY_HERE_TO_TRIGGER_A_REBUILD"
-        }
-      },
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-43.0.tar.xz",
-          "sha256": "1623f29289724f2965caf949e740e0924d36dd7bbdf2d8fa32fedb487e575575"
+          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-43.1.tar.xz",
+          "sha256": "d12642d241d738352196e7da5efd13bdf0c0055e972450cd885f8a7e63a16c43"
         }
       ]
     }
