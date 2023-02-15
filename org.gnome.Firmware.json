@@ -66,6 +66,7 @@
         "-Dbuild=library",
         "-Dsystemd=disabled",
         "-Dsoup_session_compat=false",
+        "-Ddocs=disabled",
         "-Dtests=false"
       ],
       "build-options": {
@@ -76,8 +77,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.4.tar.xz",
-          "sha256": "adfa07434cdc29ec41c40fef460e8d970963fe0c7e849dec7f3932adb161f886"
+          "url": "https://people.freedesktop.org/~hughsient/releases/fwupd-1.8.10.tar.xz",
+          "sha256": "bef35489d35d856f717a4b231159e4211ec2678a01422cd9251305b5952ae8ec"
+        },
+        {
+          "type": "patch",
+          "path": "0001-Fix-Dbuild-library-target.patch"
         }
       ]
     },
@@ -90,8 +95,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-43.1.tar.xz",
-          "sha256": "d12642d241d738352196e7da5efd13bdf0c0055e972450cd885f8a7e63a16c43"
+          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-43.2.tar.xz",
+          "sha256": "04404c69422924e82c34cc7af917734dd197c7a218b99b856c43aef0d5f831bd"
         }
       ]
     }
