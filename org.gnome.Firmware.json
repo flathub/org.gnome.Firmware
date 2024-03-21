@@ -95,8 +95,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.5/fwupd-1.9.5.tar.xz",
-          "sha256": "201ec20538044749c96dbff708e52f7d79038de787b90a2762e76793080aa37c"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.15/fwupd-1.9.15.tar.xz",
+          "sha256": "6a69667d999eb4591293796351f163074dddb1dae8a5b6ae00cdc6098a856da2"
         }
       ]
     },
@@ -109,8 +109,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/gnome-firmware-45.0.tar.xz",
-          "sha256": "f19421d359dc400451291384a08d2cfa79f11fa6a577dc5779b93dc36bfd822f"
+          "url": "https://gitlab.gnome.org/World/gnome-firmware/-/archive/46.0/gnome-firmware-46.0.tar.gz",
+          "sha256": "c4d8190ee24ca42b1bc52d2e33f60ce9f1c07849cb433d0a27966f86b463fe20"
         }
       ]
     }
