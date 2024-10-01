@@ -2,7 +2,7 @@
   "app-id": "org.gnome.Firmware",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "47",
   "command": "gnome-firmware",
   "finish-args": [
     "--device=dri",
@@ -34,8 +34,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.14/libxmlb-0.3.14.tar.xz",
-          "sha256": "a2f0056eed14ff791aee2b08b1514a0f1b6cf215f0579138a8cae8c45a0d3b0f"
+          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz",
+          "sha256": "0a3ec258b12dbf10e5fe840b2421c84137eb7cc1b09c3de6210f3f7d51733733"
         }
       ]
     },
@@ -53,8 +53,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libjcat/releases/download/0.1.14/libjcat-0.1.14.tar.xz",
-          "sha256": "702706d75ff0c7253d0f5697bdd482e8c2cfe9909749fc7d68ddb364730b7383"
+          "url": "https://github.com/hughsie/libjcat/releases/download/0.2.1/libjcat-0.2.1.tar.xz",
+          "sha256": "a6232aeca3c3fab6dbb3bed06ec3832088b49a4b278a7119558d72be60ce921f"
         }
       ]
     },
@@ -95,8 +95,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.15/fwupd-1.9.15.tar.xz",
-          "sha256": "6a69667d999eb4591293796351f163074dddb1dae8a5b6ae00cdc6098a856da2"
+          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.25/fwupd-1.9.25.tar.xz",
+          "sha256": "a1d484778ae87c69b38f417659b33fe3d689373ce0831d1f95617b8aa76e8c37"
         }
       ]
     },
@@ -109,8 +109,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://gitlab.gnome.org/World/gnome-firmware/-/archive/46.0/gnome-firmware-46.0.tar.gz",
-          "sha256": "c4d8190ee24ca42b1bc52d2e33f60ce9f1c07849cb433d0a27966f86b463fe20"
+          "url": "https://gitlab.gnome.org/World/gnome-firmware/-/archive/47.0/gnome-firmware-47.0.tar.gz",
+          "sha256": "725539dd8ffb505eeb2e26d443c9eb1cf28faf7b1515fffcec946fdc78fa796c"
         }
       ]
     }
