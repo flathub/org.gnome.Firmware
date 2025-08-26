@@ -2,7 +2,7 @@
   "app-id": "org.gnome.Firmware",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "47",
+  "runtime-version": "48",
   "command": "gnome-firmware",
   "finish-args": [
     "--device=dri",
@@ -34,8 +34,13 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz",
-          "sha256": "0a3ec258b12dbf10e5fe840b2421c84137eb7cc1b09c3de6210f3f7d51733733"
+          "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.23/libxmlb-0.3.23.tar.xz",
+          "sha256": "ab86eb2073592448a4e0263ab56e222de092c0a3964b66a8d696cac071c8ee3c",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 179028,
+            "url-template": "https://github.com/hughsie/libxmlb/releases/download/$version/libxmlb-$version.tar.xz"
+          }
         }
       ]
     },
@@ -53,23 +58,40 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/hughsie/libjcat/releases/download/0.2.1/libjcat-0.2.1.tar.xz",
-          "sha256": "a6232aeca3c3fab6dbb3bed06ec3832088b49a4b278a7119558d72be60ce921f"
+          "url": "https://github.com/hughsie/libjcat/releases/download/0.2.3/libjcat-0.2.3.tar.xz",
+          "sha256": "f2f115aad8a8f16b8dde1ed55de7abacb91d0878539aa29b2b60854b499db639",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 229583,
+            "url-template": "https://github.com/hughsie/libjcat/releases/download/$version/libjcat-$version.tar.xz"
+          }
         }
       ]
     },
     {
-      "name": "Jinja2",
+      "name": "python3-jinja2",
       "buildsystem": "simple",
       "build-commands": [
-        "python3 setup.py build",
-        "python3 setup.py install --prefix=/app --root=/"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"jinja2\" --no-build-isolation"
       ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/7a/ff/75c28576a1d900e87eb6335b063fab47a8ef3c8b4d88524c4bf78f670cce/Jinja2-3.1.2.tar.gz",
-          "sha256": "31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852"
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/b2/97/5d42485e71dfc078108a86d6de8fa46db44a1a9295e89c5d6d4a06e23a62/markupsafe-3.0.2.tar.gz",
+          "sha256": "ee55d3edf80167e48ea11a923c7386f4669df67d7994554387f84e7d8b0a2bf0",
+          "x-checker-data": {
+            "type": "pypi",
+            "name": "markupsafe"
+          }
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz",
+          "sha256": "0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d",
+          "x-checker-data": {
+            "type": "pypi",
+            "name": "jinja2"
+          }
         }
       ]
     },
@@ -85,18 +107,24 @@
         "-Dsystemd=disabled",
         "-Dpassim=disabled",
         "-Ddocs=disabled",
-        "-Dtests=false"
+        "-Dtests=false",
+        "-Dvendor_ids_dir=/app/share/hwdata"
       ],
       "build-options": {
         "env": {
-          "PYTHONPATH": "/app/utils/lib/python3.9/site-packages:/app/lib/python3.9/site-packages:/usr/lib/python3.9/site-packages"
+          "PYTHONPATH": "/app/utils/lib/python3.12/site-packages:/app/lib/python3.12/site-packages:/usr/lib/python3.12/site-packages"
         }
       },
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/fwupd/fwupd/releases/download/1.9.25/fwupd-1.9.25.tar.xz",
-          "sha256": "a1d484778ae87c69b38f417659b33fe3d689373ce0831d1f95617b8aa76e8c37"
+          "url": "https://github.com/fwupd/fwupd/releases/download/2.0.13/fwupd-2.0.13.tar.xz",
+          "sha256": "da049e8616924b15d434d3eb616767f00f91611c3e7c8efd9e36c28099e1126f",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 5833,
+            "url-template": "https://github.com/fwupd/fwupd/releases/download/$version/fwupd-$version.tar.xz"
+          }
         }
       ]
     },
@@ -110,7 +138,12 @@
         {
           "type": "archive",
           "url": "https://gitlab.gnome.org/World/gnome-firmware/-/archive/47.0/gnome-firmware-47.0.tar.gz",
-          "sha256": "725539dd8ffb505eeb2e26d443c9eb1cf28faf7b1515fffcec946fdc78fa796c"
+          "sha256": "725539dd8ffb505eeb2e26d443c9eb1cf28faf7b1515fffcec946fdc78fa796c",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 27560,
+            "url-template": "https://gitlab.gnome.org/World/gnome-firmware/-/archive/$version/gnome-firmware-$version.tar.gz"
+          }
         }
       ]
     }
