@@ -34,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.23/libxmlb-0.3.23.tar.xz",
-                    "sha256": "ab86eb2073592448a4e0263ab56e222de092c0a3964b66a8d696cac071c8ee3c",
+                    "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz",
+                    "sha256": "ded52667aac942bb1ff4d1e977e8274a9432d99033d86918feb82ade82b8e001",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 179028,
@@ -118,8 +118,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fwupd/fwupd/releases/download/2.0.14/fwupd-2.0.14.tar.xz",
-                    "sha256": "3dc0bdc3b23aa7b56c3b4057e323a30db30f38b51c76b93948b1a4b5b2c833f2",
+                    "url": "https://github.com/fwupd/fwupd/releases/download/2.0.15/fwupd-2.0.15.tar.xz",
+                    "sha256": "4a437965a1b9ef7d6d1690c47036fccaab7908906899f3eb4f8381fb9e1bc7f0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5833,
