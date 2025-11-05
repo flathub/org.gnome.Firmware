@@ -118,8 +118,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz",
-                    "sha256": "79cce6b61d9ea531de0ef3b13e7f2682c699901b11f410b2ed91192618e1620e",
+                    "url": "https://github.com/fwupd/fwupd/releases/download/2.0.17/fwupd-2.0.17.tar.xz",
+                    "sha256": "b51dd12ffb99f8fa91a873abaffc104c2cfed4b5d926f15f04c060e5bffb9fdf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5833,
