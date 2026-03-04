@@ -15,8 +15,11 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/share/man"
+        "/share/gir-1.0",
+        "/share/man",
+        "/share/vala"
     ],
     "modules": [
         {
