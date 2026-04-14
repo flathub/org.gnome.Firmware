@@ -34,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.25/libxmlb-0.3.25.tar.xz",
-                    "sha256": "77f2768c9debd2e946173cdf9465efd987849805e7c58251c5772ea728a61d9a",
+                    "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.26/libxmlb-0.3.26.tar.xz",
+                    "sha256": "a18bc447fff0dd0d76a2e6cd4a603b4712047c027f9bbbdc31ebc25f0e2c1ed9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 179028,
@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/hughsie/libjcat/releases/download/0.2.5/libjcat-0.2.5.tar.xz",
-                    "sha256": "066e402168c51bffddcf325190e5901402b266fbda2a4eed772fd06a88b941bf",
+                    "url": "https://github.com/hughsie/libjcat/releases/download/0.2.6/libjcat-0.2.6.tar.xz",
+                    "sha256": "d54ad936ceb654e99f59b0227e4d1974b858970d250d98c6484abcfdc8334722",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229583,
