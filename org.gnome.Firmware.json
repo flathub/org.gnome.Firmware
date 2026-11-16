@@ -2,7 +2,7 @@
     "app-id": "org.gnome.Firmware",
     "sdk": "org.gnome.Sdk",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "51",
     "command": "gnome-firmware",
     "finish-args": [
         "--device=dri",
@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/hughsie/libjcat/releases/download/0.2.5/libjcat-0.2.5.tar.xz",
-                    "sha256": "066e402168c51bffddcf325190e5901402b266fbda2a4eed772fd06a88b941bf",
+                    "url": "https://github.com/hughsie/libjcat/releases/download/0.2.6/libjcat-0.2.6.tar.xz",
+                    "sha256": "d54ad936ceb654e99f59b0227e4d1974b858970d250d98c6484abcfdc8334722",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229583,
@@ -55,8 +55,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7e/99/7690b6d4034fffd95959cbe0c02de8deb3098cc577c67bb6a24fe5d7caa7/markupsafe-3.0.3.tar.gz",
-                    "sha256": "722695808f4b6457b320fdc131280796bdceb04ab50fe1795cd540799ebe1698",
+                    "url": "https://files.pythonhosted.org/packages/38/9b/e422a865e1d5d57d0e509b4e0bf1c1a70a7f6382c29a5aa428df994c8bc8/markupsafe-3.0.4.tar.gz",
+                    "sha256": "2e9ad7dd851bf45fab9f75cbff4cb493fee9979e8d8c7c9c3ee119022518edd6",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "markupsafe"
@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fwupd/fwupd/releases/download/2.0.20/fwupd-2.0.20.tar.xz",
-                    "sha256": "431fb30fb27500ca55ae515d2fbda69878b58247cd4031d5c79f88b166db70c9",
+                    "url": "https://github.com/fwupd/fwupd/releases/download/2.1.9/fwupd-2.1.9.tar.xz",
+                    "sha256": "d45f3cbac06f1f6da300fb7c148237ff15c12df9981824e925bc2f3722bff233",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5833,
