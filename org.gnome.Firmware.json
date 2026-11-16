@@ -15,35 +15,13 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/share/man"
+        "/share/gir-1.0",
+        "/share/man",
+        "/share/vala"
     ],
     "modules": [
-        {
-            "name": "libxmlb",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dintrospection=false",
-                "-Dgtkdoc=false",
-                "-Dtests=false",
-                "-Dstemmer=false",
-                "-Dcli=false",
-                "--sysconfdir=/app/etc",
-                "--localstatedir=/var/data"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/hughsie/libxmlb/releases/download/0.3.30/libxmlb-0.3.30.tar.xz",
-                    "sha256": "2cb894b873aac5fc9e9b6228d4e795f7236d16e429ed2de8f95179a131be3a68",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 179028,
-                        "url-template": "https://github.com/hughsie/libxmlb/releases/download/$version/libxmlb-$version.tar.xz"
-                    }
-                }
-            ]
-        },
         {
             "name": "libjcat",
             "buildsystem": "meson",
